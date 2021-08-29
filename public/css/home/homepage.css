@@ -1,0 +1,271 @@
+html, body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.header{
+    border:1px solid #ccc;
+    height:60px;
+}
+
+.header-child{
+    margin:auto;
+    margin-top:10px;
+    width:300px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header-child #div{
+    display:flex;
+    flex-direction:column;
+}
+
+.header-child #notification{
+    height:20px;
+    position:relative;
+    top:-24px;
+    left:10px;
+    border: 2px solid #ccc;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.header-child #div img{
+    height:32px;
+    width:32px;
+    border-radius:60px;
+    margin-top:2px;
+}
+
+.header-child #div b{
+    font-size:30px;
+    font-weight:700;
+    text-decoration: underline;
+}
+
+
+.header-child #div i{
+    font-size:28px;
+    margin-top:5px;
+    color:#ccf;
+}
+
+
+.create-post-button{
+    width:fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.create-post-button button{
+    background-color: white;
+    border:1px solid #ccc;
+    width:320px;
+    font-weight: 400;
+    font-size:17px;
+    height:35px;
+    border-radius: 2px;
+}
+
+.create-post-button i{
+    font-size: 20px;
+}
+
+
+.post-div{
+    margin:auto;
+    margin-top:40px;
+    border:1px solid #ccc;
+    width:320px;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+
+.post-div #dscrption{
+    margin-top: 5px;
+    margin-left:8px;
+    height:40px;
+    border-top:0px solid white;
+    border-bottom:1px solid #ccc;
+}
+.post-div  #dscrption img{
+    height:30px;
+    width:30px;
+    border-radius: 60px;
+}
+
+.post-div #dscrption span{
+    position:relative;
+    left:10px;
+    top:-10px;
+}
+
+
+.post-description{
+    margin-top:10px;
+}
+
+.post-description #image{
+    width:fit-content;
+    margin:auto;
+    margin-top:15px;
+}
+
+.post-description #image img{
+    height:100px;
+    width:100px;
+    padding:2px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.post-description #tags{
+    width:fit-content;
+    margin:auto;
+    margin-top: 10px;
+}
+
+.post-description #comment-like{
+    height:30px;
+    /* margin:auto; */
+    margin-top:-5px;
+    width: 150px;
+    margin-left:10px;
+}
+
+.post-description #comment-like i{
+    font-size: 15px;
+}
+
+.post-description #comment-like button{
+    border-radius: 60px;
+    height:30px;
+    background-color: white;
+    border:0px solid #ccc;
+    margin-left: 7px;
+}
+
+.post-description #tags{
+    display: flex;
+    flex-direction: column;
+}
+.post-description #tag-button{
+    width:fit-content;
+    margin:auto;
+}
+.post-description #tag-button button{
+    height:30px;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-top:4px;
+    margin-left: 3px;
+    text-decoration: underline;
+}
+
+.post-description #tags p{
+    width:300px;
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+.all-comments{
+    margin-left:10px;
+}
+
+.all-comments #all-comments-inputs input[type=text]{
+    height:40px;
+    width: 200px;
+    border:1px solid #ccc;
+    border-radius: 60px;
+}
+
+.all-comments #all-comments-inputs button{
+    background:white;
+    border:1px solid #ccc;
+    margin-left:5px;
+    height:40px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.all-comments-details{
+    margin-top: 10px;
+}
+
+.all-comments-details button{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0px solid #ccc;
+}
+
+.all-comments-details button p{
+    text-align: center;
+    margin-top: 3px;
+    height:fit-content;
+}
+
+.all-comments-details button b{
+    margin-left:5px;
+}
+
+.all-comments-details button img{
+    height:20px;
+    width: 20px;
+    border-radius: 60px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder{
+    text-align: center;
+}
+
+.post-div #space-breaker{
+    height:20px;
+}
+
+.last{
+    margin-top:10px;
+}
+
+
+.made-by{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    width: 300px;
+    background-color: #ccc;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+.made-by *{
+    margin-left: 15px;
+}
+
+.made-by i{
+    color: red;
+}
+
+@media (min-width:600px){
+   
+    .header-child{
+        margin:auto;
+        width:350px;
+        margin-top:20px;
+    }
+
+} 
+

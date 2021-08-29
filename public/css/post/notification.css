@@ -1,0 +1,66 @@
+html, body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:black;
+}
+
+.header{
+    border:1px solid #ccc;
+    height:65px;
+}
+
+.header-child{
+    /* margin-left:5px; */
+    width:320px;
+    margin: auto;
+    margin-top:20px;
+    display:flex;
+}
+
+.header-child #div{
+   margin-left:10px;
+}
+
+
+.header-child #div b{
+    font-size:30px;
+    font-weight:700;
+}
+
+
+.header-child #slogan{
+   margin-left:40px;
+   margin-top:8px;
+   font-size:20px;
+   font-weight:400;
+}
+
+.demox-notification{
+    width: 320px;
+    margin:auto;
+    margin-top:20px;
+}
+
+.demox-notification input[type=submit]{
+    background-color: white;
+    border:2px solid #ccc;
+    height:35px;
+    width: 320px;
+}
+
+.demox-notification #main-notufy button{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #ccc;
+}
+
+.demox-notification #main-notufy button b{
+    font-size: 25px;
+}
+
+.demox-notification #main-notufy button span{
+    margin-top: 10px;
+}

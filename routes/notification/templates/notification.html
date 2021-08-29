@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/public/fonts/webfonts/all.css" >
+        <link rel="stylesheet" href="/public/css/post/notification.css"/>
+        <script src="/public/javascript/post/post.js"> </script>
+        <script src="/public/javascript/post/ajax.js"> </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-child">
+                <div id="div">
+                    <a href="/user/"><span><b>Photostat</b></span></a>
+                </div>
+
+                <div id="slogan">
+                    <span >Notification  <i class='fas fa-bell'></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demox-notification">
+            <form method="POST" action="/edit/notify/" ><input type="submit" value="Mark all as read" name="notify"></form>
+            {{.Value}}
+        </div>
+
+    </body>
+</html>

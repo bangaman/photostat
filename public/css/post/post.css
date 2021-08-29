@@ -1,0 +1,158 @@
+html, body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:black;
+}
+
+.header{
+    border:1px solid #ccc;
+    height:65px;
+}
+
+.header-child{
+    margin-left:5px;
+    margin-top:20px;
+    width:320px;
+    display:flex;
+}
+
+.header-child #div{
+   margin-left:10px;
+}
+
+
+.header-child #div b{
+    font-size:30px;
+    font-weight:700;
+}
+
+
+.header-child #slogan{
+   margin-left:40px;
+   margin-top:8px;
+   font-size:20px;
+   font-weight:400;
+}
+
+.createpost-home{
+    margin-top:40px;
+}
+
+.child-createpost-home{
+    width:300px;
+    margin:auto;
+}
+
+.child-createpost-home i{
+    font-size:70px;
+    color:#ccc;
+}
+
+.child-createpost-home label p{
+    margin-top:5px;
+}
+
+#select-zone{
+    margin-top: 40px;
+}
+
+#select-zone select{
+    height:25px;
+    width: 150px;
+    border:1px solid #ccc;
+    border-radius: 2px;
+}
+
+.child-createpost-home #tagg1-xyz{
+    margin-top:10px;
+}
+
+.child-createpost-home #tagg1-xyz p{
+    position:relative;
+    font-size: 12px;
+    top:6px;
+}
+
+.child-createpost-home #tagg1-xyz input[type=text]{
+    height:30px;
+    width:150px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+
+.child-createpost-home #tagg1-xyz textarea{
+    height:100px;
+    width:200px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+
+.child-createpost-home #xyz-submit-button{
+    margin-top:20px;
+    height:80px;
+}
+
+.child-createpost-home #xyz-submit-button input[type=submit]{
+    height:35px;
+    width:200px;
+    background:#ccc;
+    font-weight:600;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+.child-createpost-home #files{
+    margin-top: 10px;
+}
+
+.child-createpost-home #files img{
+    height:120px;
+    width:120px;
+    padding:2px 2px;
+    border-radius: 4px;
+}
+
+.child-createpost-home #button-error{
+    height:30px;
+}
+
+.child-createpost-home #button-error button{
+    /* margin-top:10px; */
+    background-color: black;
+    color:white;
+    font-weight: 700;
+    border:1px solid black;
+    height: 25px;
+    border-radius: 4px;
+}
+
+
+
+@media (min-width:600px){
+   
+    .header-child{
+        margin:auto;
+        width:400px;
+        margin-top:20px;
+    }
+
+    .child-createpost-home #tagg1-xyz input[type=text]{
+        border:2px solid #ccc;
+    }
+
+    .child-createpost-home #tagg1-xyz textarea{
+        border:2px solid #ccc;
+    }
+    
+    .child-createpost-home #tagg1-xyz input[type=submit]{
+        border:2px solid #ccc;
+    }
+
+} 
+
+
+
+

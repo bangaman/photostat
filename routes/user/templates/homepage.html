@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script> -->
+        <link rel="stylesheet" href="/public/fonts/webfonts/all.css" >
+        <link rel="stylesheet" href="/public/css/home/homepage.css"/>
+        <script src="/public/javascript/post/ajax.js"> </script>
+        <script src="/public/javascript/post/comment.js"> </script>
+
+    </head>
+    <body>
+        <div id="demo"></div>
+        <div class="header">
+            <div class="header-child">
+                <div id="div">
+                    <a href="/user/"><span><b>Photostat</b></span></a>
+                </div>
+
+                <!-- <div id="div">
+                    <span><i class="fa fa-shopping-cart"></i></span>
+                </div> -->
+
+                <a href="/notification/notify"><div id="div">
+                    <span><i class="fas fa-bell"></i></span>
+                    {{.Countnotification}}
+                </div></a>
+
+                <div id="div">
+                    <a href="/user/{{.Username}}">{{.Image}}</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="create-post-button">
+            <a href="/post/make-post/"><button><i class='fas fa-camera'></i>&nbsp;&nbsp;&nbsp; Create post</button></a>
+        </div>
+
+        <!-- <div class="post-div">
+            <div id="dscrption">
+                <span><i class='fas fa-camera'></i>  <b>@Maaji</b> Hanged <b>status</b></span>
+            </div>
+
+            <div class="post-description">
+                <div id="image">
+                    <img src="/public/stat/image-180681026.jpg"/><img  src="/public/stat/image-674702639.jpg/"/><img src="/public/stat/image-812273593.jpg/"/>
+                </div>
+
+                <div id="tags">
+                    <button>#Green Crook bird <i class='fa fa-chevron-up'></i></button>
+                    <button>#Flying alien bird <i class='fa fa-chevron-up'></i></button>
+                </div>
+            </div>
+
+            <div id="space-breaker"></div>
+        </div> -->
+
+        {{.Post}}
+    </body>
+</html>
+
+<!-- font awesome from BootstrapCDN -->
+<!-- 
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="/public/js.cookie.js"></script>
+	<script src="/public/user.js"> </script>
+	<link href="/public/app.css" rel="stylesheet"> -->

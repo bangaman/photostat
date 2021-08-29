@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Awesome site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/public/fonts/webfonts/all.css" >
+        <link rel="stylesheet" href="/public/css/edit/editprofile.css"/>
+
+        <!-- profile-update-display -->
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-child">
+                <div id="div">
+                    <a href="/user/"><span><b>Photostat</b></span></a>
+                </div>
+
+                <div id="slogan">
+                    <span ><i class='fas fa-pen'></i> Edit profile</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="auth0-edit-homepage">
+            <form method="POST" action="/edit/profile">
+                <input style="display: none;" type="file" name="myfile" id="image-label" >
+                <!-- <label for='image-label'>
+                    <div id="image-label-details">
+                        <span><i class='fas fa-camera'></i></span>
+                        <p><i class='fas fa-plus'></i> Add Picture</p>
+                    </div>
+                </label> -->
+                <div class="updated-button"  >{{.Updated}}</div>
+                <p>Update Username</p>
+                <span>{{.UsernameErr}}</span>
+                <input type="text" value="{{.Username}}" name="username">
+                <p>Update Email</p>
+                <span>{{.EmailErr}}</span>
+                <input type="email" value="{{.Email}}" name="email">
+                <input type="submit" value="Update"/>
+            </form>
+        </div>
+
+    </body>
+</html>
+
